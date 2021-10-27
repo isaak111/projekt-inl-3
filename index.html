@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>     
-     <img src="./media/img/background-img.jpg" alt="Background image">
+     <img id="background-img" src="./media/img/background-img.jpg" alt="Background image">
     <header class="header">
         <h1>SuperDevs</h1>
         <nav class="link-wrapper">
-            // Vi skulle kunna ha display hidden på alla body element förutom den som är aktiv och sen byta vid link
-            klick
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#service">Services</a></li>
@@ -27,11 +25,11 @@
         </nav>
     </header>
     <section class="hero-section" id="home">
-        <video width="250" autoplay muted loop>
+        <video class="hero-video" width="500" autoplay muted loop>
             <source src="./media/video/SUPERDEVS.mp4.mp4" type="video/mp4">
             Not supported by your crap browser!
         </video>
-        <div>
+        <div class="video-overlay">
             <h1>Welcome to Superdevs</h1>
         </div>
     </section>
@@ -41,14 +39,14 @@
              <div class="upper-half">
                 <i class="fa fa-stethoscope"></i>
                     <div class="background-image-wrapper">
-                        <img src="./media/img/pexels-fauxels-3184465.jpg" width="500" alt="services what we do">
+                        <img class="service-img" src="./media/img/pexels-fauxels-3184465.jpg" width="500" alt="services what we do">
                     </div>
                 <h3>RUBRIK 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus sequi minima nostrum quaerat omnis corporis aliquid reprehenderit, dicta illo commodi perferendis assumenda voluptate sapiente atque possimus eum accusamus nemo?</p>
              </div>
              <div class="lower-half">
                  <div class="background-image-wrapper">
-                     <img src="./media/img/pexels-andrea-piacquadio-3863775.jpg" width="500" alt="The people we care for with our services">
+                     <img class="service-img" src="./media/img/pexels-andrea-piacquadio-3863775.jpg" width="500" alt="The people we care for with our services">
                  </div>
                  <h3>RUBRIK 2</h3>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates necessitatibus, illum commodi doloribus possimus maiores beatae asperiores laudantium rem reiciendis quia quam autem distinctio! A neque recusandae nesciunt quod culpa.</p>
