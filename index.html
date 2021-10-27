@@ -6,54 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SuperDev's SuperPage">
     <title>SuperDevs</title>
-    <link rel="shortcut icon" type="img/jpg" href="./media/img/wizard_hat.png"/>
+    <link rel="shortcut icon" type="img/jpg" href="./media/img/wizard_hat.png" />
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <img src="./media/img/background-img.jpg" alt="nein">
-    <header>
+<body>     
+     <img src="./media/img/background-img.jpg" alt="Background image">
+    <header class="header">
         <h1>SuperDevs</h1>
-            <nav class="link-wrapper">
-            // Vi skulle kunna ha display hidden på alla body element förutom den som är aktiv och sen byta vid link klick
-                <ul>
-                    <a href="#hero-section">Home</a>
-                    <a href="#services-section">Services</a>
-                    <a href="#about-section">About</a>
-                    <a href="#contact-section">Contact</a>
-                </ul> 
-            </nav>
+        <nav class="link-wrapper">
+            // Vi skulle kunna ha display hidden på alla body element förutom den som är aktiv och sen byta vid link
+            klick
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <section id="">
-        <video src="" width="" autoplay muted loop>
-            <source src="" type="">//lägg in en video
+    <section class="hero-section" id="home">
+        <video width="250" autoplay muted loop>
+            <source src="./media/video/SUPERDEVS.mp4.mp4" type="video/mp4">
+            Not supported by your crap browser!
         </video>
         <div>
-            <h1>Ska vi skriva något här?</h1>
+            <h1>Welcome to Superdevs</h1>
         </div>
     </section>
-    <section id="hero-section">
-
-    </section>
-    <section id="service-section">
+    <section class="service-section" id="service">
         <main>
-            // Service - section?
+         <section class="service-container">
+             <div class="upper-half">
+                <i class="fa fa-stethoscope"></i>
+                    <div class="background-image-wrapper">
+                        <img src="./media/img/pexels-fauxels-3184465.jpg" width="500" alt="services what we do">
+                    </div>
+                <h3>RUBRIK 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus sequi minima nostrum quaerat omnis corporis aliquid reprehenderit, dicta illo commodi perferendis assumenda voluptate sapiente atque possimus eum accusamus nemo?</p>
+             </div>
+             <div class="lower-half">
+                 <div class="background-image-wrapper">
+                     <img src="./media/img/pexels-andrea-piacquadio-3863775.jpg" width="500" alt="The people we care for with our services">
+                 </div>
+                 <h3>RUBRIK 2</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates necessitatibus, illum commodi doloribus possimus maiores beatae asperiores laudantium rem reiciendis quia quam autem distinctio! A neque recusandae nesciunt quod culpa.</p>
+             </div>
+         </section>   
+
         </main>
     </section>
-    <section id="about-section">
-        //about - section
-    </section>
-    <section id="">
-        //länk-section-socialmedia
+    <section class="about-section" id="about">
+        <img src="./media/img/superdevs-assemble-final.jpg" alt="Picture of the Superdevs crew">
+            <div>
+                <h1>About us</h1>
+                    <p>
+                        Our strength consists in our speed and in our brutality. 
+                        superDevs led millions of women and children to slaughter – with premeditation and a happy heart. 
+                        History sees in them solely the founder of a state. 
+                        They're a matter of indifference to me what a weak western European civilization will say about me. 
+                        I have issued the command – and I’ll have anybody who utters but one word of criticism executed by a firing squad – 
+                        that our war aim does not consist in reaching certain lines, but in the physical destruction of the enemy. Accordingly, 
+                        I have placed my death-head formation in readiness – for the present only in the East
+                        – with orders to them to send to death mercilessly and without compassion, men, women, and children of Polish derivation and language.
+                        Only thus shall we gain the living space (Lebensraum) which we need. Who, after all, speaks to-day of the annihilation of the Armenians?
+                    </p>
+            </div>    
     </section>
     <footer>
         <section id="contact-section">
-            <form onsubmit="alert('Message sent!')"></form>
-            //contact-section
+            <form onsubmit="alert('Message sent!')">
+                <input placeholder="Email" type="email" id="email" required>
+                <input placeholder="Subject" type="text" id="subject" required>
+                <textarea placeholder="Write your message here!" rows="5" required></textarea>
+                <input type="Submit" value="WTF DID YOU DO!?">
+            </form>
+            <div class="mail-wrapper">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:Da-Neil@superDevs.com">Mail me plz</a>
+            </div>
+            <div class="phone-wrapper">
+                <i class="fa fa-phone"></i>
+                <a href="tel:+4666666666666">plz call me</a>
+            </div>
+            <div class="address-wrapper">
+                <strong><p>Address:</p></strong>
+                <p>superStreet 666</p>
+                <p>366666</p>
+                <p>Somewhere Down South</p>
+            </div>
         </section>
-        
     </footer>
 </body>
+
 </html>
