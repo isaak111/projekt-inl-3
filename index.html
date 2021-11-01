@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>     
-     <img id="background-img" src="./media/img/background-img.jpg" alt="Background image">
+
+<body>
+    <img id="background-img" src="./media/img/background-img.jpg" alt="Background image">
     <header class="header">
         <h1>SuperDevs</h1>
         <nav class="link-wrapper">
@@ -25,7 +27,8 @@
         </nav>
     </header>
     <section class="hero-section" id="home">
-        <video class="hero-video" width="500" autoplay muted loop>
+        <video width="500" muted loop>
+            <!-- Glöm inte att sätta autoplay igen efteråt!-->
             <source src="./media/video/SUPERDEVS.mp4.mp4" type="video/mp4">
             Not supported by your crap browser!
         </video>
@@ -35,42 +38,47 @@
     </section>
     <section class="service-section" id="service">
         <main>
-         <section class="service-container">
-             <div class="upper-half">
-                <i class="fa fa-stethoscope"></i>
-                    <div class="background-image-wrapper">
-                        <img class="service-img" src="./media/img/pexels-fauxels-3184465.jpg" width="500" alt="services what we do">
+                <div class="upper-half">
+                    <div class="service-text">
+                        <h3>RUBRIK 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Iste delectus sequi minima nostrum quaerat omnis corporis aliquid reprehenderit,
+                            dicta illo commodi perferendis assumenda voluptate sapiente atque possimus eum accusamus
+                            nemo?</p>
                     </div>
-                <h3>RUBRIK 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste delectus sequi minima nostrum quaerat omnis corporis aliquid reprehenderit, dicta illo commodi perferendis assumenda voluptate sapiente atque possimus eum accusamus nemo?</p>
-             </div>
-             <div class="lower-half">
-                 <div class="background-image-wrapper">
-                     <img class="service-img" src="./media/img/pexels-andrea-piacquadio-3863775.jpg" width="500" alt="The people we care for with our services">
-                 </div>
-                 <h3>RUBRIK 2</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates necessitatibus, illum commodi doloribus possimus maiores beatae asperiores laudantium rem reiciendis quia quam autem distinctio! A neque recusandae nesciunt quod culpa.</p>
-             </div>
-         </section>   
-
+                </div>
+                <div class="lower-half">
+                    <div class="service-text">
+                        <h3>RUBRIK 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates necessitatibus, illum
+                            commodi doloribus possimus maiores beatae asperiores laudantium rem reiciendis quia quam
+                            autem distinctio! A neque recusandae nesciunt quod culpa.</p>
+                    </div>
+                </div>
         </main>
     </section>
     <section class="about-section" id="about">
-        <img src="./media/img/superdevs-assemble-final.jpg" alt="Picture of the Superdevs crew">
+        <div id="zoom-img">
+            <img src="./media/img/background-img.jpg" alt="picture of superdevs">
             <div>
                 <h1>About us</h1>
-                    <p>
-                        Our strength consists in our speed and in our brutality. 
-                        superDevs led millions of women and children to slaughter – with premeditation and a happy heart. 
-                        History sees in them solely the founder of a state. 
-                        They're a matter of indifference to me what a weak western European civilization will say about me. 
-                        I have issued the command – and I’ll have anybody who utters but one word of criticism executed by a firing squad – 
-                        that our war aim does not consist in reaching certain lines, but in the physical destruction of the enemy. Accordingly, 
-                        I have placed my death-head formation in readiness – for the present only in the East
-                        – with orders to them to send to death mercilessly and without compassion, men, women, and children of Polish derivation and language.
-                        Only thus shall we gain the living space (Lebensraum) which we need. Who, after all, speaks to-day of the annihilation of the Armenians?
-                    </p>
-            </div>    
+                <p>
+                    Our strength consists in our speed and in our brutality.
+                    superDevs led millions of women and children to slaughter – with premeditation and a happy heart.
+                    History sees in them solely the founder of a state.
+                    They're a matter of indifference to me what a weak western European civilization will say about me.
+                    I have issued the command – and I’ll have anybody who utters but one word of criticism executed by a
+                    firing squad –
+                    that our war aim does not consist in reaching certain lines, but in the physical destruction of the
+                    enemy. Accordingly,
+                    I have placed my death-head formation in readiness – for the present only in the East
+                    – with orders to them to send to death mercilessly and without compassion, men, women, and children of
+                    Polish derivation and language.
+                    Only thus shall we gain the living space (Lebensraum) which we need. Who, after all, speaks to-day of
+                    the annihilation of the Armenians?
+                </p>
+            </div>
+        </div>
     </section>
     <footer>
         <section id="contact-section">
@@ -89,7 +97,9 @@
                 <a href="tel:+4666666666666">plz call me</a>
             </div>
             <div class="address-wrapper">
-                <strong><p>Address:</p></strong>
+                <strong>
+                    <p>Address:</p>
+                </strong>
                 <p>superStreet 666</p>
                 <p>366666</p>
                 <p>Somewhere Down South</p>
@@ -97,5 +107,8 @@
         </section>
     </footer>
 </body>
+
+<script src="./scripts/scripts.js"></script> 
+<script src=>"./scripts/imgzoom.js"</script> 
 
 </html>

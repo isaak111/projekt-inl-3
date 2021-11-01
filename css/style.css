@@ -6,6 +6,10 @@
     color: white;
 }
 
+html {
+    line-height: 1.5;
+}
+
 #background-img{
     display: flex;
     position: fixed;
@@ -48,14 +52,103 @@ li {
 }
 
 .hero-section {
-    justify-content: center;
-    align-items: center;
+    
     background-color: darkblue;
+    
 }
 
 .video-overlay {
     display: flex;
     position: absolute;
-    top: 50;
+    top: 200px;
     z-index: 10;
+    width: 100%;
+    height: calc(100vh - 200px);
+    justify-content: center;
+    align-items: center;
+    
+   
 }
+
+.hero-section video {
+    width: 100%;
+    height: calc(100vh - 200px);
+    object-fit: cover;
+}
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-half , .lower-half {
+    width: 100%;
+    height:calc(50vh - 100px);
+    display: flex;
+}
+
+.upper-half {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/pexels-fauxels-3184465.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: left;
+    
+}
+
+.lower-half {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/pexels-andrea-piacquadio-3863775.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.service-text{
+    z-index: 10;
+    background-color: rgba(252, 235, 5, 0.418);
+    width: 35%;
+    display: flex;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-text h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.service-text p {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    text-align: justify;
+    
+}
+
+.about-section {
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 200px);
+    background-size: cover;
+}
+
+.about-section h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-section p , h1{
+    background-color: rgba(252, 235, 5, 0.418);
+ 
+
+#zoom-img{
+    width: 600px;
+    height: 338px;
+    background: url("fuck-this-shit.jpg");
+    background-position: center;
+    background-size: cover;
+   background-size: cover;
+  }
