@@ -128,10 +128,12 @@ li {
 }
 
 .about-section {
-    width: 100%;
-    display: flex;
-    height: calc(100vh - 200px);
+    background:url(../media/img/superdevs-assemble-final.jpg) no-repeat;
     background-size: cover;
+    height: calc(100vh - 200px);
+    justify-content: center;
+    align-items:flex-end;
+    display: flex;
 }
 
 .about-section h1 {
@@ -140,15 +142,49 @@ li {
     margin-top: 20px;
 }
 
-.about-section p , h1{
-    background-color: rgba(252, 235, 5, 0.418);
- 
+.about-text-wrapper {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    margin:20px;
 
-#zoom-img{
-    width: 600px;
-    height: 338px;
-    background: url("fuck-this-shit.jpg");
-    background-position: center;
-    background-size: cover;
-   background-size: cover;
-  }
+}
+
+#contact-section {
+  display: flex;
+  height:500px;
+  width: 100%;
+  background-color: lightskyblue;
+}
+
+.mail-wrapper {
+    display: flex;
+   background-color: crimson;
+   width: 20%;
+}
+
+.phone-wrapper{
+    display: flex;
+    background-color: darkblue;
+    width: 20%;
+}
+
+.adress-wrapper {
+    display: flex;
+    background-color: orange;
+    width: 20%;
+}
+
+.contact-form-wrapper {
+    display: flex;
+    background-color: lightcoral;
+   width: 40%;
+   
+     
+}
+
+.contact-wrapper {
+    display: flex;
+    width: 100%;
+}
