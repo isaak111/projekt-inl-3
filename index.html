@@ -19,10 +19,10 @@
         <h1>SuperDevs</h1>
         <nav class="body-link-wrapper">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -33,61 +33,74 @@
             Not supported by your crap browser!
         </video>
         <div class="hero-video-overlay">
-            <h1>Welcome to Superdevs</h1>
+            <h1>Welcome to SuperDevs</h1>
         </div>
     </section>
     <section class="service-section" id="service">
         <main>
             <div class="service-upper-half">
                 <div class="service-text">
-                    <h3>RUBRIK 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iste delectus sequi minima nostrum quaerat omnis corporis aliquid reprehenderit,
-                        dicta illo commodi perferendis assumenda voluptate sapiente atque possimus eum accusamus
-                        nemo? Ding Dong!</p>
+                    <div class="service-text-headline">
+                        <h3>RUBRIK 1</h3>
+                    </div>
+                    <div class="service-text-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Iste delectus sequi minima nostrum quaerat omnis corporis aliquid reprehenderit,
+                            dicta illo commodi perferendis assumenda voluptate sapiente atque possimus eum accusamus
+                            nemo? Ding Dong!</p>
+                    </div>
                 </div>
             </div>
             <div class="service-lower-half">
                 <div class="service-text">
-                    <h3>RUBRIK 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates necessitatibus, illum
-                        commodi doloribus possimus maiores beatae asperiores laudantium rem reiciendis quia quam
-                        autem distinctio! A neque recusandae nesciunt quod culpa.</p>
+                    <div class="service-text-headline">
+                        <h3>RUBRIK 2</h3>
+                    </div>
+                    <div class="service-text-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Iste delectus sequi minima nostrum quaerat omnis corporis aliquid reprehenderit,
+                            dicta illo commodi perferendis assumenda voluptate sapiente atque possimus eum accusamus
+                            nemo? Ding Dong!</p>
+                    </div>
                 </div>
             </div>
         </main>
     </section>
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="about-text-wrapper">
-            <h1>About us</h1>
-            <p>
-                Our name is SuperDevs Devimus Seridius, commander of the Armies of the North, General of the Felix
-                Legions
-                and loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son. Husband to a murdered
-                wife. And I will have my vengeance, in this life or the next.
-                IT WAS ONLY JOKE DONT FIRE at me pls tanks - okey
-                We shall defend our island, whatever the cost may be, we shall fight on the beaches, we shall fight on
-                the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we
-                shall never surrender.
-            </p>
+            <div class="about-text-headline">
+                <h1>About us</h1>
+            </div>
+            <div class="about-text-content">
+                <p>
+                    Our name is SuperDevs Devimus Seridius, commander of the Armies of the North, General of the Felix
+                    Legions
+                    and loyal servant to the true emperor, Marcus Aurelius. Father to a murdered son. Husband to a murdered
+                    wife. And I will have my vengeance, in this life or the next.
+                    IT WAS ONLY JOKE DONT FIRE at me pls tanks - okey
+                    We shall defend our island, whatever the cost may be, we shall fight on the beaches, we shall fight on
+                    the landing grounds, we shall fight in the fields and in the streets, we shall fight in the hills; we
+                    shall never surrender.
+                </p>
+            </div>
         </div>
     </section>
     <footer>
-        <section id="contact-section">
+        <section class="contact-section" id="contact">
             <div class="contact-wrapper">
                 <div class="contact-mail-wrapper">
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:Da-Neil@superDevs.com">Mail me plz</a>
+                    <a href="mailto:team@superDevs.com">Mail us plz</a>
                 </div>
                 <div class="contact-phone-wrapper">
                     <i class="fa fa-phone"></i>
-                    <a href="tel:+4666666666666">plz call me</a>
+                    <a href="tel:+46720149111"> Plz call us</a>
                 </div>
                 <div class="contact-adress-wrapper">
                     <h3>Adress:</h3>
                     <p>
-                        superStreet 666 <br>
-                        366666 <br>
+                        Super Street 666 <br>
+                        366 666 <br>
                         Somewhere Down South
                     </p>
                 </div>
@@ -101,10 +114,15 @@
             </div>
             <div class="contact-form-wrapper">
                 <form onsubmit="alert('Message sent!')">
-                    <input placeholder="Email" type="email" id="email" required>
-                    <input placeholder="Subject" type="text" id="subject" required>
-                    <textarea placeholder="Write your message here!" rows="5" required></textarea>
-                    <input type="Submit" value="WTF DID YOU DO!?">
+                    <div class="contact-form-textfields">
+                        <input placeholder="Email" type="email" id="email" required>
+                        <input placeholder="Subject" type="text" id="subject" required>
+                        <textarea placeholder="Write your message here!" rows="5" required ></textarea>
+                    </div>                    
+                    <div class="contact-form-button">
+                        <input type="Submit" value="SEND TO SPAMFOLDER">
+                    </div>
+                    
                 </form>
             </div>
         </section>

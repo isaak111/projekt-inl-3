@@ -20,23 +20,33 @@ html {
     z-index: -1;
 }
 
-.header{
-    background-color: orange;
+.header{    
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    text-shadow: 3px 3px 10px black;
+    border-bottom: 2px solid white;    
+    z-index:999;    
+}
+
+.header h1 {
+    font-size: 70px;
+    border-bottom: 3px solid white;
+}
+
+.header a {
+    margin:10px;
+    font-size: 20px;    
 }
 
 a {
-    margin:10px;
     text-decoration: none;
 }
 
-li:hover {
-    background-color: aqua;
+a:hover {
+    color: brown;
 }
 
 li {
@@ -52,9 +62,7 @@ li {
 }
 
 .hero-section {
-    
-    background-color: darkblue;
-    
+    height: calc(100vh - 200px);   
 }
 
 .hero-video-overlay {
@@ -66,8 +74,12 @@ li {
     height: calc(100vh - 200px);
     justify-content: center;
     align-items: center;
-    
-   
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+.hero-video-overlay h1 {
+    font-size: 60px;
+    text-shadow: 0 0 15px rgba(255, 244, 219, 0.637);
 }
 
 .hero-section video {
@@ -99,13 +111,11 @@ li {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/pexels-andrea-piacquadio-3863775.jpg);
     background-size:cover;
     display: flex;
-    justify-content: right;
-    
+    justify-content: right;    
 }
 
 .service-text{
-    z-index: 10;
-    background-color: rgba(252, 235, 5, 0.418);
+    z-index: 10;    
     width: 35%;
     display: flex;
     margin: 40px;
@@ -113,22 +123,28 @@ li {
     flex-direction: column;
 }
 
-.service-text h3 {
-    display: flex;
+.service-text-headline {
+    display: flex;    
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    border-bottom: 3px solid brown;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    
 }
 
-.service-text p {
+.service-text-content {
     display: flex;
     justify-content: center;
     padding: 10px;
     text-align: justify;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
     
 }
 
 .about-section {
-    background:url(../media/img/superdevs-assemble-final.jpg) no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../media/img/superdevs-assemble-final.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 200px);
     justify-content: center;
@@ -136,42 +152,50 @@ li {
     display: flex;
 }
 
-.about-section h1 {
+.about-text-headline {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    font-size: 30px;
+    border-bottom: 3px solid brown;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
-.about-text-wrapper {
-    background-color: red;
+.about-text-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+    
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+}
+
+.about-text-wrapper {    
     display: flex;
     flex-direction: column;
     padding:20px;
     margin:20px;
-
+    width: 80%;
 }
 
-#contact-section {
+.contact-section {
   display: flex;
   height:500px;
   width: 100%;
-  background-color: lightskyblue;
 }
 
 .contact-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: pink;
     margin: 50px;
+    height: 400px;
     align-items: center;
 }
 
-
-
 .contact-mail-wrapper {
     display: flex;
-   background-color: crimson;
    height: 50px;
    align-items: center;
    font-size: 30px;
@@ -180,26 +204,29 @@ li {
 
 .contact-phone-wrapper{
     display: flex;
-    background-color: cyan;
     height: 50px;
     align-items: center;   
     font-size: 30px;
     width: 300px;   
 }
 
+.contact-mail-wrapper i,
+.contact-phone-wrapper i {
+    margin-right: 10px;
+}
+
 .contact-adress-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: orange;
     height: 210px;
     align-items: left;
     justify-content: center;
     width: 300px;
     font-size: 20px;   
 }
+
 .contact-social-section{
     display: flex;
-    background-color: black;
     height: 70px;
     align-items: center;
     justify-content: center;
@@ -208,15 +235,79 @@ li {
     width: 300px;
 }
 
-.contact-social-section li:hover{
-    cursor: pointer;
-    background-color: antiquewhite;
-    border-radius: 50%;
+.contact-social-section i:hover{
+    color: brown;    
 }
 
 .contact-form-wrapper {
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;      
+    width: 100%;
+    align-items: center;       
+}
+
+.contact-form-wrapper input {
+    background-color: lightgray;    
+    padding:10px;
+    width: 300px;
+    height: 35px;
+    color: black;
+    border-radius: 10px;
+    border: 0;         
+}
+.contact-form-wrapper textarea {
+    background-color: rgb(231, 231, 231);    
+    padding:10px;
+    width: 300px;
+    height: 200px;
+    color: black;
+    border-radius: 10px;
+    border: 0;
+    resize: none;  
+}
+
+.contact-form-textfields {    
+    display: grid;
+    justify-content: center;
+    height: 350px;    
+}
+
+.contact-form-button {
     display: flex;
-    background-color: lightcoral;
-    width: 50%; 
+    justify-content: center;
+    align-items: center;
+    height: 50px;    
+}
+
+.contact-form-button input {        
+    width: 200px;
+    height: 50px;    
+    text-justify: center;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.contact-form-button input:hover {
+    background-color: brown;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .about-section {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contact-section {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;        
+    }
 }
 
