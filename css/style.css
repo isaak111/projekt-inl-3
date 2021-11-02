@@ -158,31 +158,65 @@ li {
   background-color: lightskyblue;
 }
 
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: pink;
+    margin: 50px;
+    align-items: center;
+}
+
+
+
 .contact-mail-wrapper {
     display: flex;
    background-color: crimson;
-   width: 20%;
+   height: 50px;
+   align-items: center;
+   font-size: 30px;
+   width: 300px; 
 }
 
 .contact-phone-wrapper{
     display: flex;
     background-color: cyan;
-    width: 20%;
+    height: 50px;
+    align-items: center;   
+    font-size: 30px;
+    width: 300px;   
 }
 
 .contact-adress-wrapper {
     display: flex;
+    flex-direction: column;
     background-color: orange;
-    width: 20%;
+    height: 210px;
+    align-items: left;
+    justify-content: center;
+    width: 300px;
+    font-size: 20px;   
+}
+.contact-social-section{
+    display: flex;
+    background-color: black;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    padding-top: 30px;
+    width: 300px;
+}
+
+.contact-social-section li:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 50%;
 }
 
 .contact-form-wrapper {
     display: flex;
     background-color: lightcoral;
-    width: 40%; 
+    width: 50%; 
 }
 
-.contact-wrapper {
-    display: flex;
-    width: 100%;
-}
