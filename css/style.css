@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -46,7 +47,9 @@ a {
 }
 
 a:hover {
-    color: brown;
+    color: brown;    
+    transition: 0.5s;
+    
 }
 
 li {
@@ -104,21 +107,22 @@ li {
     background-size:cover;
     display: flex;
     justify-content: left;
-    
+    background-position: right 45%;
 }
 
 .service-lower-half {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/pexels-andrea-piacquadio-3863775.jpg);
     background-size:cover;
+    background-position: right 55%;
     display: flex;
     justify-content: right;    
 }
 
-.service-text{
+.service-text{    
     z-index: 10;    
-    width: 35%;
+    width: 450px;
     display: flex;
-    margin: 40px;
+    margin: 40px 8% 40px 8%;
     display: flex;
     flex-direction: column;
 }
@@ -146,6 +150,7 @@ li {
 .about-section {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../media/img/superdevs-assemble-final.jpg) no-repeat;
     background-size: cover;
+    background-position: bottom 50%;
     height: calc(100vh - 200px);
     justify-content: center;
     align-items:flex-end;
@@ -166,8 +171,7 @@ li {
     justify-content: center;
     margin-top: 20px;
     font-size: 20px;
-    text-align: justify;
-    
+    text-align: justify;    
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
@@ -195,9 +199,10 @@ li {
 }
 
 .contact-mail-wrapper {
-    display: flex;
+display: flex;
    height: 50px;
    align-items: center;
+   justify-content: center;
    font-size: 30px;
    width: 300px; 
 }
@@ -205,38 +210,66 @@ li {
 .contact-phone-wrapper{
     display: flex;
     height: 50px;
-    align-items: center;   
+    align-items: center;
+    justify-content: center;   
     font-size: 30px;
-    width: 300px;   
+    width: 300px;
+    margin-bottom: 15px;   
 }
 
-.contact-mail-wrapper i,
-.contact-phone-wrapper i {
-    margin-right: 10px;
+.contact-mail-wrapper a:hover,
+.contact-phone-wrapper a:hover {
+    color: brown;
+    transform: scale(1.1);
+    transition: 0.5s;    
 }
 
 .contact-adress-wrapper {
     display: flex;
     flex-direction: column;
-    height: 210px;
-    align-items: left;
+    height: 180px;
+    align-items: center;
     justify-content: center;
-    width: 300px;
-    font-size: 20px;   
+    width: 210px;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.2);    
+    border-radius: 10px;
+    line-height: 2;   
 }
 
 .contact-social-section{
     display: flex;
     height: 70px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 40px;
-    padding-top: 30px;
+    padding: 60px 20px 0 20px;
     width: 300px;
 }
 
 .contact-social-section i:hover{
-    color: brown;    
+    color: brown;
+    transform: scale(1.1);
+    transition: 0.5s;    
+}
+
+.contact-social-section a:hover{
+    color: initial;
+    transform: scale(1);
+    transition: none;    
+}
+
+.contact-robot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-robot-image {
+    transform: scale(90%, 100%);
+    width: 500px;
+    opacity: 0.2;
 }
 
 .contact-form-wrapper {
@@ -254,7 +287,8 @@ li {
     height: 35px;
     color: black;
     border-radius: 10px;
-    border: 0;         
+    border: 0;
+    outline-offset: 5px;         
 }
 .contact-form-wrapper textarea {
     background-color: rgb(231, 231, 231);    
@@ -264,7 +298,8 @@ li {
     color: black;
     border-radius: 10px;
     border: 0;
-    resize: none;  
+    resize: none;
+    outline-offset: 5px;  
 }
 
 .contact-form-textfields {    
@@ -291,6 +326,9 @@ li {
 .contact-form-button input:hover {
     background-color: brown;
     color: white;
+    transform: scalex(1.05);
+    transition: 0.2s;
+
 }
 
 @media (max-width: 800px) {
@@ -300,6 +338,7 @@ li {
         justify-content: center;
         align-items: center;
         width: 100%;
+        
     }
     
     .contact-section {        
@@ -307,7 +346,40 @@ li {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;        
+        width: 100%;
+        margin-top: 35vh;
+        height: calc(100vh-200px)        
+    }
+    
+    .contact-robot-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    
+    .contact-robot-image {
+        width: 200px;
+        opacity: 0.1;        
+    }
+
+    .contact-form-wrapper {
+        padding-bottom: 25px;
+    }
+
+    .hero-video-overlay h1 {
+        font-size: 30px;
+    }
+
+    .about-section {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/superdevs-assemble-final.jpg) no-repeat;
+        background-size: cover;
+        background-position: 50%;        
+        height: calc(100vh - 200px);
+        justify-content: center;
+        align-items:center;
+        display: flex;
     }
 }
 
