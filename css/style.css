@@ -10,7 +10,7 @@ html {
     line-height: 1.5;
 }
 
-#background-img{
+#body-background-img{
     display: flex;
     position: fixed;
     top: 0;
@@ -44,7 +44,7 @@ li {
     display: inline;    
 }
 
-.link-wrapper {
+.body-link-wrapper {
     display: flex;
     padding-top: 20px;
     align-items: bottom;
@@ -57,7 +57,7 @@ li {
     
 }
 
-.video-overlay {
+.hero-video-overlay {
     display: flex;
     position: absolute;
     top: 200px;
@@ -81,13 +81,13 @@ li {
     flex-direction: column;
 }
 
-.upper-half , .lower-half {
+.service-upper-half , .service-lower-half {
     width: 100%;
     height:calc(50vh - 100px);
     display: flex;
 }
 
-.upper-half {
+.service-upper-half {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/pexels-fauxels-3184465.jpg);
     background-size:cover;
     display: flex;
@@ -95,7 +95,7 @@ li {
     
 }
 
-.lower-half {
+.service-lower-half {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/pexels-andrea-piacquadio-3863775.jpg);
     background-size:cover;
     display: flex;
@@ -158,19 +158,19 @@ li {
   background-color: lightskyblue;
 }
 
-.mail-wrapper {
+.contact-mail-wrapper {
     display: flex;
    background-color: crimson;
    width: 20%;
 }
 
-.phone-wrapper{
+.contact-phone-wrapper{
     display: flex;
     background-color: darkblue;
     width: 20%;
 }
 
-.adress-wrapper {
+.contact-adress-wrapper {
     display: flex;
     background-color: orange;
     width: 20%;
@@ -179,9 +179,7 @@ li {
 .contact-form-wrapper {
     display: flex;
     background-color: lightcoral;
-   width: 40%;
-   
-     
+    width: 40%; 
 }
 
 .contact-wrapper {
