@@ -160,8 +160,8 @@ li {
 .about-section {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../media/img/superdevs-assemble-final.jpg) no-repeat;
     background-size: cover;
-    background-position: bottom 50%;
-    height: calc(100vh - 200px);
+    background-position: top;
+    height: 100vh;
     justify-content: center;
     align-items:flex-end;
     display: flex;
@@ -357,7 +357,7 @@ display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-top: 35vh;
+        margin-top: 20vh;
         height: calc(100vh-200px)        
     }
     
