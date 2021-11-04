@@ -1,20 +1,30 @@
-(function () {
+import { isMobile } from './mobile.js';
 
-    let navbar = document.getElementById("nav");
+if (!isMobile()) {
+    (function () {
+        let navbar = document.getElementById("nav");
+        let bodyList = ["home", "about", "services"];
 
-    let bodyList = ["home", "about", "service"];
+        function displaySection(e) {
+            console.info("e.target.innerText = " + e.target.innerText);
+            if (e.target.innerText != "Contact" && e.target.innerText != null && e.target.innerText != "Home Services About Contact") {
+                for (let i = 0; i < bodyList.length; i++) {
+                    let element = document.getElementById(bodyList[i]);
+                    element.classList.add("hidden");
+                    if (!element.classList.contains("hero-section")) {
+                        element.classList.remove("flex");
+                    }
+                }
+                let displaySection = document.getElementById(e.target.innerText.toLowerCase());
 
-    function displaySection(e) {
-        for (let i = 0; i < bodyList.length; i++) {
-            let element = document.getElementById(bodyList[i]);
-            element.classList.add("hidden");
+                if (displaySection != null) {
+                    if (!displaySection.classList.contains("hero-section")) {
+                        displaySection.classList.add("flex");
+                    }
+                    displaySection.classList.remove("hidden");
+                }
+            }
         }
-
-        if(e.target.innerText)
-        let displaySection = document.getElementById(e.target.innerText.toLowerCase());
-
-        displaySection.classList.remove("hidden");
-    }
-
-    navbar.addEventListener("click" displaySection());
-}());
+        navbar.addEventListener("click", displaySection);
+    }())
+};

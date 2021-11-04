@@ -11,6 +11,18 @@ html {
     line-height: 1.5;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 #body-background-img{
     display: flex;
     position: fixed;
@@ -21,19 +33,19 @@ html {
     z-index: -1;
 }
 
-.header{    
+.header{
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-shadow: 3px 3px 10px black;
-    border-bottom: 2px solid white;  
+    border-bottom: 2px solid white;
     z-index:999;
-    background-image: url("../media/img/background-img.jpg"); 
+    background-image: url("../media/img/background-img.jpg");
     background-size: cover;
     position: fixed;
-    top:0;  
+    top:0;
     width: 100%;
 }
 
@@ -46,7 +58,7 @@ html {
 
 .header a {
     margin:10px;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 a {
@@ -54,26 +66,28 @@ a {
 }
 
 a:hover {
-    color: brown;    
+    color: brown;
     transition: 0.5s;
-    
+
 }
 
 li {
     padding: 10px;
-    display: inline;    
+    display: inline;
 }
 
 .body-link-wrapper {
     display: flex;
     padding-top: 20px;
     align-items: bottom;
-    
+
 }
 
 .hero-section {
     padding-top: 200px;
-    height: calc(100vh - 200px);   
+    height: 100vh;
+    /*height: calc(100vh - 200px);
+    margin-bottom: 200px;*/
 }
 
 .hero-video-overlay {
@@ -94,21 +108,20 @@ li {
 }
 
 .hero-section video {
+    position: relative;
     width: 100%;
     height: calc(100vh - 200px);
     object-fit: cover;
 }
 
 .service-section {
-    display: flex;
     flex-direction: column;
     padding-top: 200px;
-    
 }
 
-.service-upper-half , .service-lower-half {
+.service-upper-half, .service-lower-half {
     width: 100%;
-    height:calc(50vh - 100px);
+    height: calc(50vh - 100px);
     display: flex;
 }
 
@@ -125,36 +138,37 @@ li {
     background-size:cover;
     background-position: right 55%;
     display: flex;
-    justify-content: right;    
+    justify-content: right;
 }
 
-.service-text{    
-    z-index: 10;    
-    width: 450px;
+.service-text{
+    z-index: 10;
+    width: 1000px;
     display: flex;
     margin: 40px 8% 40px 8%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .service-text-headline {
-    display: flex;    
+    display: flex;
     justify-content: center;
+    align-items: center;
     margin: 10px;
     padding: 10px;
     font-size: 30px;
-    border-bottom: 3px solid brown;
+    border-right: 3px solid brown;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-    
 }
 
 .service-text-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
     text-align: justify;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-    
+    font-size: 16px;
 }
 
 .about-section {
@@ -164,7 +178,6 @@ li {
     height: 100vh;
     justify-content: center;
     align-items:flex-end;
-    display: flex;
 }
 
 .about-text-headline {
@@ -181,11 +194,11 @@ li {
     justify-content: center;
     margin-top: 20px;
     font-size: 20px;
-    text-align: justify;    
+    text-align: justify;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
-.about-text-wrapper {    
+.about-text-wrapper {
     display: flex;
     flex-direction: column;
     padding:20px;
@@ -197,41 +210,42 @@ li {
   display: flex;
   height:500px;
   width: 100%;
+  /*padding-top: 200px;*/
 }
 
 .contact-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 33%;
     margin: 50px;
     height: 400px;
     align-items: center;
 }
 
 .contact-mail-wrapper {
-display: flex;
+  display: flex;
    height: 50px;
    align-items: center;
    justify-content: center;
    font-size: 30px;
-   width: 300px; 
+   width: 300px;
 }
 
 .contact-phone-wrapper{
     display: flex;
     height: 50px;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
     font-size: 30px;
     width: 300px;
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
 }
 
 .contact-mail-wrapper a:hover,
 .contact-phone-wrapper a:hover {
     color: brown;
     transform: scale(1.1);
-    transition: 0.5s;    
+    transition: 0.5s;
 }
 
 .contact-adress-wrapper {
@@ -242,9 +256,9 @@ display: flex;
     justify-content: center;
     width: 210px;
     font-size: 20px;
-    background-color: rgba(255,255,255,0.2);    
+    background-color: rgba(255,255,255,0.2);
     border-radius: 10px;
-    line-height: 2;   
+    line-height: 2;
 }
 
 .contact-social-section{
@@ -260,20 +274,25 @@ display: flex;
 .contact-social-section i:hover{
     color: brown;
     transform: scale(1.1);
-    transition: 0.5s;    
+    transition: 0.5s;
 }
 
 .contact-social-section a:hover{
     color: initial;
     transform: scale(1);
-    transition: none;    
+    transition: none;
 }
 
 .contact-robot-wrapper {
+    background-image: url("../media/img/robot-annihalate.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    opacity: 0.3;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 33%;
 }
 
 .contact-robot-image {
@@ -285,23 +304,23 @@ display: flex;
 .contact-form-wrapper {
     display: grid;
     grid-template-columns: 400px;
-    justify-content: center;      
-    width: 100%;
-    align-items: center;       
+    justify-content: center;
+    width: 33%;
+    align-items: center;
 }
 
 .contact-form-wrapper input {
-    background-color: lightgray;    
+    background-color: lightgray;
     padding:10px;
     width: 300px;
     height: 35px;
     color: black;
     border-radius: 10px;
     border: 0;
-    outline-offset: 5px;         
+    outline-offset: 5px;
 }
 .contact-form-wrapper textarea {
-    background-color: rgb(231, 231, 231);    
+    background-color: rgb(231, 231, 231);
     padding:10px;
     width: 300px;
     height: 200px;
@@ -309,25 +328,25 @@ display: flex;
     border-radius: 10px;
     border: 0;
     resize: none;
-    outline-offset: 5px;  
+    outline-offset: 5px;
 }
 
-.contact-form-textfields {    
+.contact-form-textfields {
     display: grid;
     justify-content: center;
-    height: 350px;    
+    height: 350px;
 }
 
 .contact-form-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;    
+    height: 50px;
 }
 
-.contact-form-button input {        
+.contact-form-button input {
     width: 200px;
-    height: 50px;    
+    height: 50px;
     text-justify: center;
     border-radius: 25px;
     font-weight: bold;
@@ -341,26 +360,145 @@ display: flex;
 
 }
 
+@media (max-width: 1150px) {
+    .contact-robot-wrapper {
+      display: none;
+    }
+
+    .contact-wrapper {
+        width: 50%;
+    }
+
+    .contact-form-wrapper {
+        width: 50%;
+    }
+}
+
 @media (max-width: 800px) {
-    .about-section {        
+    #home {
+      scroll-margin-top: 200px;
+    }
+
+    #services {
+      scroll-margin-top: 200px;
+    }
+
+    #about {
+      scroll-margin-top: 200px;
+    }
+
+    #contact {
+      scroll-margin-top: 380px;
+    }
+
+    .hero-video-overlay h1 {
+        font-size: 30px;
+    }
+
+    .body-link-wrapper ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .service-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-top: 0;
+        position: relative;
+        z-index: 11;
+    }
+
+    .service-text {
+        z-index: 11;
+        width: 450px;
+        display: flex;
+        margin: 40px 8% 40px 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-text-headline {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+        border-bottom: 3px solid brown;
+        border-right: 0;
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .service-text-content {
+        display: inline-block;
+        justify-content: center;
+        padding: 10px;
+        text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+        font-size: 16px;
+        overflow-y: auto;
+    }
+
+    .service-upper-half {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../media/img/pexels-fauxels-3184465.jpg);
+        background-size:cover;
+        display: flex;
+        justify-content: left;
+        background-position: right 45%;
+    }
+
+    .service-lower-half {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../media/img/pexels-andrea-piacquadio-3863775.jpg);
+        background-size:cover;
+        background-position: right 55%;
+        display: flex;
+        justify-content: right;
+    }
+
+    .service-upper-half, .service-lower-half {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 200px);
+        background-position: center center;
+    }
+
+    .about-section {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../media/img/superdevs-assemble-final.jpg) no-repeat;
+        background-position-x: 0%, 0%;
+        background-position-y: 0%, 0%;
+        background-size: auto, auto;
+        background-size: cover;
+        background-position: 50%;
+        height: calc(100vh - 200px);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        
     }
-    
-    .contact-section {        
+
+    .about-section p {
+        font-size: 16px;
+        text-align: none;
+    }
+
+    .about-text-headline h1 {
+        position: relative;
+        top: -20px;
+    }
+
+    .contact-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         margin-top: 20vh;
-        height: calc(100vh-200px)        
+        height: calc(100vh-200px)
     }
-    
+
     .contact-robot-wrapper {
         display: flex;
         justify-content: center;
@@ -368,28 +506,13 @@ display: flex;
         width: 100%;
         margin-bottom: 25px;
     }
-    
+
     .contact-robot-image {
         width: 200px;
-        opacity: 0.1;        
+        opacity: 0.1;
     }
 
     .contact-form-wrapper {
         padding-bottom: 25px;
     }
-
-    .hero-video-overlay h1 {
-        font-size: 30px;
-    }
-
-    .about-section {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/superdevs-assemble-final.jpg) no-repeat;
-        background-size: cover;
-        background-position: 50%;        
-        height: calc(100vh - 200px);
-        justify-content: center;
-        align-items:center;
-        display: flex;
-    }
 }
-
