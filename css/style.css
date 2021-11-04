@@ -8,11 +8,14 @@
 }
 
 html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     line-height: 1.5;
 }
 
-html, body {
-  overflow-x: hidden;
+html::-webkit-scrollbar {
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .flex {
