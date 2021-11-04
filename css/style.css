@@ -8,8 +8,6 @@
 }
 
 html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     line-height: 1.5;
 }
 
@@ -370,7 +368,18 @@ li {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 811px) {
+    html {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        line-height: 1.5;
+    }
+
+    html::-webkit-scrollbar {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
     #home {
       scroll-margin-top: 200px;
     }
