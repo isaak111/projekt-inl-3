@@ -23,7 +23,7 @@ html, body {
   display: none;
 }
 
-#body-background-img{
+#body-background-img {
     display: flex;
     position: fixed;
     top: 0;
@@ -33,7 +33,7 @@ html, body {
     z-index: -1;
 }
 
-.header{
+.header {
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -48,8 +48,6 @@ html, body {
     top:0;
     width: 100%;
 }
-
-
 
 .header h1 {
     font-size: 70px;
@@ -68,7 +66,6 @@ a {
 a:hover {
     color: brown;
     transition: 0.5s;
-
 }
 
 li {
@@ -80,14 +77,11 @@ li {
     display: flex;
     padding-top: 20px;
     align-items: bottom;
-
 }
 
 .hero-section {
     padding-top: 200px;
     height: 100vh;
-    /*height: calc(100vh - 200px);
-    margin-bottom: 200px;*/
 }
 
 .hero-video-overlay {
@@ -141,7 +135,7 @@ li {
     justify-content: right;
 }
 
-.service-text{
+.service-text {
     z-index: 10;
     width: 1000px;
     display: flex;
@@ -210,7 +204,6 @@ li {
   display: flex;
   height:500px;
   width: 100%;
-  /*padding-top: 200px;*/
 }
 
 .contact-wrapper {
@@ -231,7 +224,7 @@ li {
    width: 300px;
 }
 
-.contact-phone-wrapper{
+.contact-phone-wrapper {
     display: flex;
     height: 50px;
     align-items: center;
@@ -261,7 +254,7 @@ li {
     line-height: 2;
 }
 
-.contact-social-section{
+.contact-social-section {
     display: flex;
     height: 70px;
     align-items: center;
@@ -271,13 +264,13 @@ li {
     width: 300px;
 }
 
-.contact-social-section i:hover{
+.contact-social-section i:hover {
     color: brown;
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-.contact-social-section a:hover{
+.contact-social-section a:hover {
     color: initial;
     transform: scale(1);
     transition: none;
